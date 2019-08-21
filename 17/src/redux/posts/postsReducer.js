@@ -6,8 +6,11 @@ const itemsReducer = (state = [], { type, payload }) => {
     case ActionType.FETCH_POSTS_SUCCESS:
       return payload.posts;
 
-    case ActionType.DELETE_POST:
-      return state.filter(item => item.id !== payload);
+    case ActionType.DELETE_POST_SUCCESS:
+      return state.filter(item => item.id !== payload.id);
+
+    case ActionType.ADD_POST_SUCCESS:
+      return [...state, payload.newPost];
 
     default:
       return state;
@@ -17,9 +20,15 @@ const itemsReducer = (state = [], { type, payload }) => {
 const loadingReducer = (state = false, { type }) => {
   switch (type) {
     case ActionType.FETCH_POSTS_START:
+    case ActionType.DELETE_POST_START:
+    case ActionType.ADD_POST_START:
       return true;
     case ActionType.FETCH_POSTS_SUCCESS:
     case ActionType.FETCH_POSTS_ERROR:
+    case ActionType.DELETE_POST_SUCCESS:
+    case ActionType.DELETE_POST_ERROR:
+    case ActionType.ADD_POST_SUCCESS:
+    case ActionType.ADD_POST_ERROR:
       return false;
 
     default:
@@ -29,8 +38,14 @@ const loadingReducer = (state = false, { type }) => {
 
 const errorReducer = (state = null, { type, payload }) => {
   switch (type) {
+    case ActionType.FETCH_POSTS_START:
+    case ActionType.DELETE_POST_START:
+    case ActionType.ADD_POST_START:
+      return null;
     case ActionType.FETCH_POSTS_ERROR:
-      return payload;
+    case ActionType.DELETE_POST_ERROR:
+    case ActionType.ADD_POST_ERROR:
+      return payload.error;
 
     default:
       return state;

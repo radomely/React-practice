@@ -4,6 +4,12 @@ import {
   fetchPostsStart,
   fetchPostsSuccess,
   fetchPostsError,
+  deletePostStart,
+  deletePostSuccess,
+  deletePostError,
+  addPostStart,
+  addPostSuccess,
+  addPostError,
 } from './postsActions';
 
 export const fetchPosts = () => dispatch => {
@@ -19,4 +25,28 @@ export const fetchPosts = () => dispatch => {
     });
 };
 
-export const fn = () => null;
+export const deletePost = id => dispatch => {
+  dispatch(deletePostStart());
+
+  axios
+    .delete(`http://localhost:8086/posts/${id}`)
+    .then(() => {
+      dispatch(deletePostSuccess(id));
+    })
+    .catch(error => {
+      dispatch(deletePostError(error));
+    });
+};
+
+export const addPost = newPost => dispatch => {
+  dispatch(addPostStart());
+
+  axios
+    .post(`http://localhost:8086/posts/`, newPost)
+    .then(response => {
+      dispatch(addPostSuccess(response.data));
+    })
+    .catch(error => {
+      dispatch(addPostError(error));
+    });
+};

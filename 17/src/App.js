@@ -7,6 +7,7 @@ import TagFilter from './components/TagFilter/TagFilter';
 import PostList from './components/PostList/PostListContainer';
 import * as postsOperations from './redux/posts/postsOperations';
 import TotalLikes from './components/TotalLikes';
+import PostEditor from './components/PostEditor/PostEditor';
 import './App.module.css';
 
 const containerStyle = {
@@ -30,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div style={containerStyle}>
+        <PostEditor />
         <Timer />
         <StepSelector />
         <hr style={{ width: '100%' }} />

@@ -3,7 +3,7 @@ import { compose } from 'redux';
 import PostList from './PostList';
 import withRenderLog from '../hoc/withRenderLog';
 import * as postSelectors from '../../redux/posts/postsSelectors';
-import { deletePost } from '../../redux/posts/postsActions';
+import { deletePost } from '../../redux/posts/postsOperations';
 
 const mapStateToProps = state => ({
   items: postSelectors.getPostsWithSelectedTag(state),
