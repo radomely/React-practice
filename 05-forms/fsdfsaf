@@ -1,0 +1,95 @@
+[33mcommit 674f2d8dcf4d68a68f9cb27e821a338f05a5e4cc[m[33m ([m[1;36mHEAD -> [m[1;32m15-selectors[m[33m, [m[1;31morigin/15-selectors[m[33m)[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Thu Jun 6 21:09:40 2019 +0300
+
+    Adds examples
+
+[33mcommit 7a6e19348b15994c0a392b7cd493f0125da33036[m[33m ([m[1;31morigin/14-redux-basics[m[33m, [m[1;32m14-redux-basics[m[33m)[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Mon Jun 3 21:14:02 2019 +0300
+
+    Fixed typos
+
+[33mcommit e43317c048db21e2da9d51cd62bdc833bc8bc138[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Mon Jun 3 21:04:20 2019 +0300
+
+    Adds examples
+
+[33mcommit d6e2a3a6675fcf174b0fa0f71d996d8e18bd48a5[m[33m ([m[1;31morigin/12-animation[m[33m, [m[1;32m12-animation[m[33m)[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Mon May 27 20:35:10 2019 +0300
+
+    Adds examples
+
+[33mcommit efd66de6462d92f1436819bc7133030b6aa71565[m[33m ([m[1;31morigin/11-code-splitting[m[33m, [m[1;32m11-code-splitting[m[33m)[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Mon May 20 20:25:56 2019 +0300
+
+    Adds examples
+
+[33mcommit 0268b57a2a36b31d2077a78bb9a5cd7b3bb3fb43[m[33m ([m[1;31morigin/09-routing[m[33m, [m[1;32m09-routing[m[33m)[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Thu May 16 20:32:20 2019 +0300
+
+    Adds qs
+
+[33mcommit c96fc57fb10aad51eab1ab584f890d3cfec361c4[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Wed May 15 21:02:12 2019 +0300
+
+    Adds examples
+
+[33mcommit 1cae15f51ff49ca8e83409888b0876f1827a0d21[m[33m ([m[1;31morigin/practice/async-crud[m[33m, [m[1;32mpractice/async-crud[m[33m)[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Fri May 10 20:35:57 2019 +0300
+
+    Fixed linting
+
+[33mcommit 2a0c52b6dd29ed7bbfaec08a21e2bf76e96996dc[m[33m ([m[1;31morigin/practice/sync-crud[m[33m, [m[1;32mpractice/sync-crud[m[33m)[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Sat Apr 27 12:41:05 2019 +0300
+
+    Fixed linting errors
+
+[33mcommit 5adf5fe07895b8a43ce011844f2e7c971b7deda9[m[33m ([m[1;31morigin/05-forms[m[33m, [m[1;32m05-forms[m[33m)[m
+Author: Alexander Repeta <alexander.repeta@gmail.com>
+Date:   Thu Apr 25 20:51:11 2019 +0300
+
+    Adds examples
+
+[33mcommit c1bb40d270a8e1c9d3ba4f3be6bd02ddd9f01983[m[33m ([m[1;31morigin/04-state-and-events[m[33m, [m[1;32m04-state-and-events[m[33m)[m
+Author: Alexander Repeta <axzerk@gmail.com>
+Date:   Mon Apr 22 21:22:23 2019 +0300
+
+    Adds examples
+
+[33mcommit 9ccc71905b3709af76ca4c71db26040ddc65a31e[m[33m ([m[1;31morigin/03-linting[m[33m, [m[1;32m03-linting[m[33m)[m
+Author: Alexander Repeta <axzerk@gmail.com>
+Date:   Thu Apr 18 20:15:33 2019 +0300
+
+    Adds deploy
+
+[33mcommit 286d85bc2d25ddd9170ac5fec4f8e467c2f03ad5[m
+Author: Alexander Repeta <axzerk@gmail.com>
+Date:   Thu Apr 18 19:53:01 2019 +0300
+
+    Adds linting
+
+[33mcommit f96fdbe071cec600a9584a695358c2bcc50aaefc[m[33m ([m[1;31morigin/02-styling[m[33m, [m[1;32m02-styling[m[33m)[m
+Author: Alexander Repeta <axzerk@gmail.com>
+Date:   Wed Apr 17 20:43:25 2019 +0300
+
+    Adds styling
+
+[33mcommit 87bf8d08dd4b8063c3d11e984dffeb8b842779d6[m[33m ([m[1;31morigin/01-components[m[33m, [m[1;32m01-components[m[33m)[m
+Author: Alexander Repeta <axzerk@gmail.com>
+Date:   Mon Apr 15 21:27:05 2019 +0300
+
+    Adds examples
+
+[33mcommit f83396673e36366d167dc4b01eb5050823b1c45d[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Alexander Repeta <axzerk@gmail.com>
+Date:   Mon Apr 15 17:15:50 2019 +0300
+
+    Initial commit
