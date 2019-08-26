@@ -31,7 +31,8 @@
     "linebreak-style": ["error", "unix"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/static-property-placement": ["error", "static public field"], // `static public field` enabled
-    "react/jsx-props-no-spreading": [1, { "custom": "ignore" }]
+    "react/jsx-props-no-spreading": [1, { "custom": "ignore" }],
+    "react/display-name": [1]
   },
   "globals": {
     "window": true,
