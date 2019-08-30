@@ -1,6 +1,6 @@
-import React from 'react';
-import { createPortal } from 'react-dom';
-import styled from 'styled-components';
+import React from "react";
+import { createPortal } from "react-dom";
+import styled from "styled-components";
 
 const List = styled.ul`
   position: fixed;
@@ -37,7 +37,7 @@ const NotificationList = ({ items, onRemove }) =>
         </Notification>
       ))}
     </List>,
-    document.getElementById('notification-root')
+    document.getElementById("notification-root")
   );
 
 export default NotificationList;

@@ -9,7 +9,7 @@ import Modal from "./Modal";
 import AuthManager from "./AuthManager";
 
 // TODO useCallback
-// import OptimizedCounter from 'OptimizedCounter';
+import OptimizedCounter from "./OptimizedCounter";
 
 const Container = styled.div`
   font-family: sans-serif;
@@ -81,6 +81,9 @@ const App = () => {
         <button onClick={openModal}>Open modal</button>
         <AuthManager />
       </Header>
+      <hr />
+      <OptimizedCounter />
+      <hr />
       <button onClick={increment}>{count}</button>
       <TodoEditor onSave={addTodo} />
       {todos.length > 0 && <TodoList items={todos} onDeleteTodo={deleteTodo} />}
