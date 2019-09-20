@@ -1,19 +1,29 @@
-import React from "react";
-import { shallow } from "enzyme";
-import App from "../App";
-import TodoEditor from "../TodoEditor";
-import TodoList from "../TodoList";
+import React from 'react';
+import { shallow } from 'enzyme';
+import App from '../App';
+import TodoEditor from '../TodoEditor';
+import TodoList from '../TodoList';
 
-it("App renders a TodoEditor", () => {
-  const wrapped = shallow(<App />);
+describe('App component', () => {
+  let wrapped;
 
-  expect(wrapped.find(TodoEditor).length).toEqual(1);
-});
+  beforeEach(() => {
+    wrapped = shallow(<App />);
+  });
 
-it("App does not render a TodoList when there are no todos", () => {
-  const wrapped = shallow(<App />);
+  it('renders a TodoEditor', () => {
+    expect(wrapped.find(TodoEditor).length).toBe(1);
+  });
 
-  wrapped.setState({ todos: [] });
+  it('does not render a TodoList when there are no todos', () => {
+    wrapped.setState({ todos: [] });
 
-  expect(wrapped.find(TodoEditor).length).toBe(0);
+    expect(wrapped.find(TodoList).length).toBe(0);
+  });
+
+  it('renders a TodoList when there is at least one todo', () => {
+    wrapped.setState({ todos: ['first todo'] });
+
+    expect(wrapped.find(TodoList).length).toBe(1);
+  });
 });
