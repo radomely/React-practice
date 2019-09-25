@@ -2,8 +2,8 @@ import React from "react";
 
 const TodoList = ({ items }) => (
   <ul>
-    {items.map(item => (
-      <li key={item}>{item}</li>
+    {items.map(element => (
+      <li key={element}>{element}</li>
     ))}
   </ul>
 );
