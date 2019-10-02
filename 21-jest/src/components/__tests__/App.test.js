@@ -12,7 +12,7 @@ describe("App component", () => {
   });
 
   it("renders a TodoEditor", () => {
-    expect(wrapped.find(TodoEditor).length).toBe(1);
+    expect(wrapped.find(TodoEditor).length).toBe(2);
   });
 
   it("does not render a TodoList when there are no todos", () => {

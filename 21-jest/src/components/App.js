@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import TodoEditor from './TodoEditor';
-import TodoList from './TodoList';
+import React, { Component } from "react";
+import TodoEditor from "./TodoEditor";
+import TodoList from "./TodoList";
 
 export default class App extends Component {
   state = {
@@ -17,7 +17,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <TodoEditor onSave={this.saveTodo} />
-
+        <TodoEditor onSave={this.saveTodo} />
         {this.state.todos.length > 0 && <TodoList items={this.state.todos} />}
       </div>
     );
